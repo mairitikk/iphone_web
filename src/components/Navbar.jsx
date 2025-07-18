@@ -5,7 +5,7 @@ import {searchImg, bagImg} from '../utils'
 const Navbar = () => {
   return (
     <header className='w-full py-5 sm:px-10 px-5 flex justify-between item-center'>
-      <nav>
+      <nav className='flex w-full screen-max-width'>
         <img src={appleImg} alt="Apple" width={14} height={18} />
         
         <div>
