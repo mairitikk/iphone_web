@@ -2,7 +2,11 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <header>
+      <nav>
+        <img src="{appleImg}" alt="Apple" width={14} height={18} />
+      </nav>
+    </header>
   )
 }
 
