@@ -2,7 +2,13 @@ import React from 'react'
 
 const Model = () => {
   return (
-    <div>Model</div>
+ <section className='common-padding'>
+    <div className="screen-max-width">
+        <h1>
+            
+        </h1>
+    </div>
+ </section>
   )
 }
 
