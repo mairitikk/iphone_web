@@ -1,6 +1,6 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { yellowImg } from '../utils'
 
 
@@ -9,12 +9,16 @@ const Model = () => {
 useGSAP(() => {
 
     const [size, setSize] = useState('small');
-    const [Model, setModel] = useState({
+    const [model, setModel] = useState({
         title: 'iPhone 15 Pro in Natural Titanium',
         color: ['#8F8A81', '#FFE7B9', '#6F6C64'],
         img: yellowImg,
     })
 
+    //caamera controll
+    const cameraControlSmall = useRef();
+    const cameraControlLarge = useRef();
+    const small = useRef(new THREE:Group)
 
     gsap.to('#heading', {y: 0, opacity:1});
 
